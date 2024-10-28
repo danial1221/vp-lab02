@@ -1,0 +1,24 @@
+using System;
+
+namespace CommandLineApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Command-line arguments:");
+
+            if (args.Length == 0)
+            {
+                Console.WriteLine("No arguments were provided.");
+            }
+            else
+            {
+                for (int i = 0; i < args.Length; i++)
+                {
+                    Console.WriteLine($"Argument {i + 1}: {args[i]}");
+                }
+            }
+        }
+    }
+}
