@@ -1,0 +1,20 @@
+using System;
+
+namespace MYINTRODUCTION
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
+            Console.WriteLine("NAME : MUSA BIN ABDULLAH");
+            Console.Write("ROLL NO : ");
+            Console.WriteLine(2335705);
+            Console.WriteLine("Airport Road,Pull Wasil,Maqas Town,Street no 2");
+        }
+    }
+}
